@@ -209,8 +209,16 @@ class AirCargoProblem(Problem):
         executed.
         """
         # TODO implement (see Russell-Norvig Ed-3 10.2.3  or Russell-Norvig Ed-2 11.2)
+        #count the number of states that need to change to satisfy the goal.
+        #loop though goal states, and see if they are in the current clauses
         count = 0
+        kb = PropKB()
+        kb.tell(decode_state(node.state, self.state_map).pos_sentence())
+        for goal in self.goal:
+            if goal not in kb.clauses:
+                count += 1
         return count
+
 
 
 def air_cargo_p1() -> AirCargoProblem:

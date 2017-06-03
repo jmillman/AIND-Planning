@@ -90,6 +90,24 @@ Expansions   Goal Tests   New Nodes
 
 Plan length: 6  Time elapsed in seconds: 0.03279911399295088
 ***************************************************************
+python run_search.py -p 1 -s 9
+
+Solving Air Cargo Problem 1 using astar_search with h_ignore_preconditions...
+
+Expansions   Goal Tests   New Nodes
+    41          43         170
+
+Plan length: 6  Time elapsed in seconds: 0.03736400400521234
+***************************************************************
+python run_search.py -p 1 -s 10
+
+Solving Air Cargo Problem 1 using astar_search with h_pg_levelsum...
+
+Expansions   Goal Tests   New Nodes
+    55          57         224
+
+Plan length: 6  Time elapsed in seconds: 0.9704738330328837
+***************************************************************
 python run_search.py -p 2 -s 1
 
 Solving Air Cargo Problem 2 using breadth_first_search...
@@ -153,6 +171,24 @@ Expansions   Goal Tests   New Nodes
 
 Plan length: 9  Time elapsed in seconds: 11.454999515990494
 ***************************************************************
+python run_search.py -p 2 -s 9
+
+Solving Air Cargo Problem 2 using astar_search with h_ignore_preconditions...
+
+Expansions   Goal Tests   New Nodes
+   1428        1430       13085
+
+Plan length: 9  Time elapsed in seconds: 3.876375399995595
+***************************************************************
+python run_search.py -p 2 -s 10
+
+Solving Air Cargo Problem 2 using astar_search with h_pg_levelsum...
+
+Expansions   Goal Tests   New Nodes
+   4853        4855       44041
+
+Plan length: 9  Time elapsed in seconds: 519.8516121650464
+***************************************************************
 python run_search.py -p 3 -s 1
 
 Solving Air Cargo Problem 3 using breadth_first_search...
@@ -192,34 +228,14 @@ Expansions   Goal Tests   New Nodes
 
 Plan length: 12  Time elapsed in seconds: 49.29397620300006
 ***************************************************************
+python run_search.py -p 3 -s 9
+
+Solving Air Cargo Problem 3 using astar_search with h_ignore_preconditions...
+
+Expansions   Goal Tests   New Nodes
+   4859        4861       43129
+
+Plan length: 12  Time elapsed in seconds: 15.309105210006237
 ***************************************************************
+Stopped after 30 min
 ***************************************************************
-***************************************************************
-***************************************************************
-***************************************************************
-***************************************************************
-***************************************************************
-***************************************************************
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
