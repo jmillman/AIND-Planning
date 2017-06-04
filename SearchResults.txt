@@ -128,15 +128,6 @@ Expansions   Goal Tests   New Nodes
 
 Plan length: 1444  Time elapsed in seconds: 12.316984094999498
 ***************************************************************
-python run_search.py -p 2 -s 3
-
-Solving Air Cargo Problem 2 using depth_first_graph_search...
-
-Expansions   Goal Tests   New Nodes
-   1669        1670       14863
-
-Plan length: 1444  Time elapsed in seconds: 12.405039628007216
-***************************************************************
 python run_search.py -p 2 -s 4
 I stopped after a few min, wasn't good in case 1 anyway, had 50 length
 ***************************************************************
@@ -198,7 +189,10 @@ Expansions   Goal Tests   New Nodes
 
 Plan length: 12  Time elapsed in seconds: 94.99353891800274
 ***************************************************************
-python run_search.py -p 3 -s 3
+python run_search.py -p 3 -s 2
+Timeout + 10 min
+***************************************************************
+ython run_search.py -p 3 -s 3
 
 Solving Air Cargo Problem 3 using depth_first_graph_search...
 
@@ -219,6 +213,19 @@ Expansions   Goal Tests   New Nodes
 
 Plan length: 12  Time elapsed in seconds: 48.442402720000246
 ***************************************************************
+python run_search.py -p 3 -s 6
+Stopped after 10 min
+***************************************************************
+python run_search.py -p 3 -s 7
+
+Solving Air Cargo Problem 3 using greedy_best_first_graph_search with h_1...
+
+Expansions   Goal Tests   New Nodes
+   4188        4190       37008
+
+Plan length: 27  Time elapsed in seconds: 11.593145359000118
+***************************************************************
+
 python run_search.py -p 3 -s 8
 
 Solving Air Cargo Problem 3 using astar_search with h_1...
@@ -237,5 +244,6 @@ Expansions   Goal Tests   New Nodes
 
 Plan length: 12  Time elapsed in seconds: 15.309105210006237
 ***************************************************************
+python run_search.py -p 3 -s 10
 Stopped after 30 min
 ***************************************************************
